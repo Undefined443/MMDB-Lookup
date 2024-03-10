@@ -10,8 +10,8 @@ import com.maxmind.db.Reader;
 
 public class Lookup {
     public static void main(String[] args) throws Exception {
-        File mmdbFile = null;
-        Reader reader = null;
+        File mmdbFile;
+        Reader reader;
         try {
             mmdbFile = new File("resources/Country.mmdb");
             reader = new Reader(mmdbFile);
